@@ -1,0 +1,508 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --primary-color: #fe5b3e;
+    --text-dark: #0f172a;
+    --text-light: #475569;
+    --extra-light: #f2f2f2;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --gradient: linear-gradient(to bottom, #fe5c3c, #fc8023);
+}
+/*------------------------------*/
+/*-------------HERO-------------*/
+/*------------------------------*/
+.container_produtores_hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: var(--gradient);
+}
+
+.hero_text {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hero_text h2 {
+    font-size: 2.5rem;
+    color: var(--white)
+}
+
+.hero_text .btn {
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.hero_text .btn:hover {
+    color: var(--white);
+}
+
+.hero_text p {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.hero_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 30%;
+}
+
+.hero_images img:nth-child(1),
+.hero_images img:nth-child(2),
+.hero_images img:nth-child(3) {
+    width: 100px;
+    height: 150px;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    object-fit: cover;
+    flex-grow: 10px;
+}
+
+.hero_images img:nth-child(1) {
+    transform: skewY(20deg);
+}
+
+.hero_images img:nth-child(3) {
+    transform: skewY(-20deg);
+}
+/*------------------------------*/
+/*----------Experience----------*/
+/*------------------------------*/
+.container_produtores_experiencia {
+    text-align: center;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_produtores_experiencia h2 {
+    font-size: 2.5rem;
+}
+
+.produtores_exp_exemplos {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.produtores_exp_exemplos ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.produtores_exp_exemplos a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.produtores_exp_exemplos img {
+    border-radius: 100px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+/*------------------------------*/
+/*--------------nav-------------*/
+/*------------------------------*/
+.container_produtores_nav {
+    background-color: var(--black);
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.produtores_navbar ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.produtores_navbar li {min-width: 90px;}
+
+.produtores_navbar a {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.produtores_navbar a,
+.produtores_nav_text {
+    color: var(--white);
+}
+
+.produtores_nav_text h3 {
+    font-size: 2.5rem;
+}
+/*------------------------------*/
+/*-----------Soluções-----------*/
+/*------------------------------*/
+.container_produtores section:nth-child(4) {
+    background: url("../Images/categoria/show.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+
+.produtores_solucoes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--extra-light);
+    padding: 30px;
+    border-radius: 0.5rem;
+}
+
+.left_side {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.left_side_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left_side h2 {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.left_side p {
+    width: 100%;
+}
+
+.text_box {
+    width: 40%;
+    padding: 10px;
+}
+
+.left_side p:nth-child(1) {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.left_side p:nth-child(2n) {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.right_side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.right_side img {
+    max-width: 400px;
+    object-fit: cover;
+}
+/*------------------------------*/
+/*----------Ferramentas---------*/
+/*------------------------------*/
+.container_produtores_ferramentas {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container_produtores_ferramentas h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.container_produtores_ferramentas p {
+    font-size: 1.5rem;
+}
+
+.produtores_ferramentas_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.ferramentas_text,
+.ferramentas_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    max-width: 49%;
+}
+
+.ferramentas_img img {
+    width: 200px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+/*------------------------------*/
+/*-----------Vantagens----------*/
+/*------------------------------*/
+.container_produtores_vantagens {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container_produtores_vantagens h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navlist ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.navlist li {
+    min-width: 300px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.navlist i {
+    font-size: 5.5rem;
+}
+
+.navlist h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navlist p {
+    font-size: 1.2rem;
+}
+
+.produtores_vantagens_media {
+    display: flex;
+    justify-content: center;
+}
+
+.produtores_vantagens_media img {
+    width: 200px;
+}
+/*------------------------------*/
+/*-------------Preço------------*/
+/*------------------------------*/
+.container_produtores_precos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container_produtores_precos h2 {
+    min-width: 100%;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.produtores_precos_box {
+    max-width: 49%;
+    min-width: 400px;
+    padding: 10px;
+    text-align: left;
+    background-color: var(--extra-light);
+    border-radius: 0.5rem;
+}
+
+.produtores_precos_box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.produtores_precos_box p,
+.produtores_precos_box li {
+    font-size: 1.3rem;
+}
+/*------------------------------*/
+/*-----------Consultor----------*/
+/*------------------------------*/
+section:nth-child(8) {
+    background-color: var(--black);
+}
+
+.container_consultor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--white);
+    min-height: 50vh;
+}
+
+.container_consultor h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.consultor_text, .consultor_image {
+    max-width: 49%;
+    min-width: 400px;
+    padding: .5rem;
+}
+
+.consultor_text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.consultor_image img {
+    width: 300px;
+    height: 200px;
+}
+
+.btn {
+    min-width: 48%;
+    height: 64px;
+}
+
+.consultor_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 600px) {
+    /*------------------------------*/
+    /*-------------HERO-------------*/
+    /*------------------------------*/
+    .hero_text h2 {
+        font-size: 3.5rem;
+    }
+
+    .hero_text .btn,
+    .hero_text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    /*------------------------------*/
+    /*-------------HERO-------------*/
+    /*------------------------------*/
+    .hero_images img:nth-child(1),
+    .hero_images img:nth-child(2),
+    .hero_images img:nth-child(3) {
+        width: 200px;
+        height: 150px;
+    }
+    /*------------------------------*/
+    /*--------------nav-------------*/
+    /*------------------------------*/
+    .produtores_navbar a {
+        font-size: 2.5rem;
+    }
+    .produtores_nav_text h3 {
+        font-size: 3.5rem;
+    }
+    /*------------------------------*/
+    /*-------------Preço------------*/
+    /*------------------------------*/
+    .container_produtores_precos h2 {
+        min-width: 100%;
+        font-weight: 600;
+        color: var(--primary-color);
+        font-size: 2.5rem;
+    }
+
+    .produtores_precos_box h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    
+    .produtores_precos_box p,
+    .produtores_precos_box li {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    /*------------------------------*/
+    /*-------------HERO-------------*/
+    /*------------------------------*/
+    .hero_text h2 {
+        font-size: 4.5rem;
+    }
+
+    .hero_text .btn,
+    .hero_text p {
+        font-size: 2.5rem;
+    }
+
+    .hero_images img:nth-child(1),
+    .hero_images img:nth-child(2),
+    .hero_images img:nth-child(3) {
+        width: 400px;
+        height: 250px;
+    }
+    /*------------------------------*/
+    /*----------Experience----------*/
+    /*------------------------------*/
+    .produtores_exp_exemplos img {
+        width: 160px;
+        height: 160px;
+    }
+    .produtores_exp_exemplos a {
+        font-size: 2.5rem;
+    }
+    /*------------------------------*/
+    /*-----------Soluções-----------*/
+    /*------------------------------*/
+    .produtores_solucoes {
+        flex-direction: row;
+    }
+
+    .left_side, .right_side {
+        width: 49%;
+    }
+}
